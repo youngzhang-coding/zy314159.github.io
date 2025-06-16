@@ -8,8 +8,8 @@
 <head>
   <meta charset="UTF-8">
 
-  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
-  <link rel="icon" href="/img/fluid.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/youngzhang-coding/zy314159.github.io.git/img/fluid.png">
+  <link rel="icon" href="/youngzhang-coding/zy314159.github.io.git/img/fluid.png">
   
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
@@ -22,7 +22,7 @@
     <meta name="description" content="贝叶斯网络有向图的定义有向图是一种图论中的数据结构，由一组顶点（节点）和一组有方向的边组成，用于表示节点之间的单向关系。其数学定义为：$$G &#x3D; (V, E)$$  $ V $：顶点的有限集合（如 ({A, B, C}))。   $E $：有向边的集合，每条边是一个有序顶点对（如 $ (A \to B) $）表示从$A$指向$B$的边）。   关键特性 方向性    边 $ (u \to">
 <meta property="og:type" content="article">
 <meta property="og:title" content="BayesNetwork">
-<meta property="og:url" content="http://example.com/2025/06/16/BayesNetwork/index.html">
+<meta property="og:url" content="https://github.com/youngzhang-coding/zy314159.github.io.git/2025/06/16/BayesNetwork/index.html">
 <meta property="og:site_name" content="Zhang Young&#39;s Blog">
 <meta property="og:description" content="贝叶斯网络有向图的定义有向图是一种图论中的数据结构，由一组顶点（节点）和一组有方向的边组成，用于表示节点之间的单向关系。其数学定义为：$$G &#x3D; (V, E)$$  $ V $：顶点的有限集合（如 ({A, B, C}))。   $E $：有向边的集合，每条边是一个有序顶点对（如 $ (A \to B) $）表示从$A$指向$B$的边）。   关键特性 方向性    边 $ (u \to">
 <meta property="og:locale" content="zh_CN">
@@ -58,12 +58,12 @@
 <link rel="stylesheet" href="//at.alicdn.com/t/c/font_1736178_k526ubmyhba.css">
 
 
-<link  rel="stylesheet" href="/css/main.css" />
+<link  rel="stylesheet" href="/youngzhang-coding/zy314159.github.io.git/css/main.css" />
 
 
-  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  <link id="highlight-css" rel="stylesheet" href="/youngzhang-coding/zy314159.github.io.git/css/highlight.css" />
   
-    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+    <link id="highlight-css-dark" rel="stylesheet" href="/youngzhang-coding/zy314159.github.io.git/css/highlight-dark.css" />
   
 
 
@@ -72,15 +72,15 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":"HiDY23rAweTZ8cihPcZ68q6N-MdYXbMMI","app_key":"9z6dL63UbaXPqcWhGsT2W3M5","server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"github.com","root":"/youngzhang-coding/zy314159.github.io.git/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":"HiDY23rAweTZ8cihPcZ68q6N-MdYXbMMI","app_key":"9z6dL63UbaXPqcWhGsT2W3M5","server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/youngzhang-coding/zy314159.github.io.git/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
       Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
     }
   </script>
-  <script  src="/js/utils.js" ></script>
-  <script  src="/js/color-schema.js" ></script>
+  <script  src="/youngzhang-coding/zy314159.github.io.git/js/utils.js" ></script>
+  <script  src="/youngzhang-coding/zy314159.github.io.git/js/color-schema.js" ></script>
   
 
   
@@ -110,7 +110,7 @@
 <div class="header-inner" style="height: 70vh;">
   <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
-    <a class="navbar-brand" href="/">
+    <a class="navbar-brand" href="/youngzhang-coding/zy314159.github.io.git/">
       <strong>Zhang Young&#39;s Blog</strong>
     </a>
 
@@ -129,7 +129,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/" target="_self">
+              <a class="nav-link" href="/youngzhang-coding/zy314159.github.io.git/" target="_self">
                 <i class="iconfont icon-home-fill"></i>
                 <span>首页</span>
               </a>
@@ -141,7 +141,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/archives/" target="_self">
+              <a class="nav-link" href="/youngzhang-coding/zy314159.github.io.git/archives/" target="_self">
                 <i class="iconfont icon-archive-fill"></i>
                 <span>归档</span>
               </a>
@@ -153,7 +153,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/categories/" target="_self">
+              <a class="nav-link" href="/youngzhang-coding/zy314159.github.io.git/categories/" target="_self">
                 <i class="iconfont icon-category-fill"></i>
                 <span>分类</span>
               </a>
@@ -165,7 +165,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/tags/" target="_self">
+              <a class="nav-link" href="/youngzhang-coding/zy314159.github.io.git/tags/" target="_self">
                 <i class="iconfont icon-tags-fill"></i>
                 <span>标签</span>
               </a>
@@ -177,7 +177,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/about/" target="_self">
+              <a class="nav-link" href="/youngzhang-coding/zy314159.github.io.git/about/" target="_self">
                 <i class="iconfont icon-user-fill"></i>
                 <span>关于</span>
               </a>
@@ -207,7 +207,7 @@
   
 
 <div id="banner" class="banner" parallax=true
-     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+     style="background: url('/youngzhang-coding/zy314159.github.io.git/img/default.png') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
     <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
       <div class="banner-text text-center fade-in-up">
@@ -451,7 +451,7 @@ B[B]--&gt;C[C]
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" class="print-no-link">#机器学习</a>
+        <a href="/youngzhang-coding/zy314159.github.io.git/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" class="print-no-link">#机器学习</a>
       
     </div>
   
@@ -464,7 +464,7 @@ B[B]--&gt;C[C]
   <div class="license-box my-3">
     <div class="license-title">
       <div>BayesNetwork</div>
-      <div>http://example.com/2025/06/16/BayesNetwork/</div>
+      <div>https://github.com/youngzhang-coding/zy314159.github.io.git/2025/06/16/BayesNetwork/</div>
     </div>
     <div class="license-meta">
       
@@ -512,7 +512,7 @@ B[B]--&gt;C[C]
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2025/06/15/hello-world/" title="Hello World">
+                      <a href="/youngzhang-coding/zy314159.github.io.git/2025/06/15/hello-world/" title="Hello World">
                         <span class="hidden-mobile">Hello World</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
@@ -601,6 +601,12 @@ B[B]--&gt;C[C]
 
 
   
+
+
+  
+  
+
+
 
 
 
@@ -698,8 +704,8 @@ B[B]--&gt;C[C]
 
 <script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
 <script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
-<script  src="/js/events.js" ></script>
-<script  src="/js/plugins.js" ></script>
+<script  src="/youngzhang-coding/zy314159.github.io.git/js/events.js" ></script>
+<script  src="/youngzhang-coding/zy314159.github.io.git/js/plugins.js" ></script>
 
 
   <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
@@ -721,7 +727,7 @@ B[B]--&gt;C[C]
 
 
   
-    <script  src="/js/img-lazyload.js" ></script>
+    <script  src="/youngzhang-coding/zy314159.github.io.git/js/img-lazyload.js" ></script>
   
 
 
@@ -820,9 +826,52 @@ B[B]--&gt;C[C]
 
   <script>Fluid.plugins.imageCaption();</script>
 
-  <script defer src="/js/leancloud.js" ></script>
+  
+      <script>
+        if (!window.MathJax) {
+          window.MathJax = {
+            tex    : {
+              inlineMath: { '[+]': [['$', '$']] }
+            },
+            loader : {
+              load: ['ui/lazy']
+            },
+            options: {
+              renderActions: {
+                insertedScript: [200, () => {
+                  document.querySelectorAll('mjx-container').forEach(node => {
+                    let target = node.parentNode;
+                    if (target.nodeName.toLowerCase() === 'li') {
+                      target.parentNode.classList.add('has-jax');
+                    }
+                  });
+                }, '', false]
+              }
+            }
+          };
+        } else {
+          MathJax.startup.document.state(0);
+          MathJax.texReset();
+          MathJax.typeset();
+          MathJax.typesetPromise();
+        }
 
-  <script  src="/js/local-search.js" ></script>
+        Fluid.events.registerRefreshCallback(function() {
+          if ('MathJax' in window && MathJax.startup.document && typeof MathJax.startup.document.state === 'function') {
+            MathJax.startup.document.state(0);
+            MathJax.texReset();
+            MathJax.typeset();
+            MathJax.typesetPromise();
+          }
+        });
+      </script>
+    
+
+  <script  src="https://lib.baomitu.com/mathjax/3.2.2/es5/tex-mml-chtml.js" ></script>
+
+  <script defer src="/youngzhang-coding/zy314159.github.io.git/js/leancloud.js" ></script>
+
+  <script  src="/youngzhang-coding/zy314159.github.io.git/js/local-search.js" ></script>
 
 
 
@@ -830,7 +879,7 @@ B[B]--&gt;C[C]
 
 <!-- 主题的启动项，将它保持在最底部 -->
 <!-- the boot of the theme, keep it at the bottom -->
-<script  src="/js/boot.js" ></script>
+<script  src="/youngzhang-coding/zy314159.github.io.git/js/boot.js" ></script>
 
 
   
